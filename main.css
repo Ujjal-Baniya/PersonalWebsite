@@ -8,6 +8,7 @@ body{
     height: 100%;
     width: 100%;
 }
+
 .Home{
     background-image: url('home.jpg');
     height: 100vh;
@@ -29,7 +30,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: royalblue;
+    background-color: navy;
     min-height: 8vh;
 }
 
@@ -66,7 +67,7 @@ nav{
     width: 28px;
     height: 3px;
     margin: 5px;
-    background-color: tomato;
+    background-color: white;
     transition: all 0.3s ease;
 }
 
@@ -87,52 +88,6 @@ h2{
     h2{
         padding-top: 25%;
         font-size: 50px;
-    }
-}
-
-
-@media screen and (max-width:768px){
-    body{
-        overflow-x: hidden;
-    }
-    .nav-links{
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        background-color: royalblue;
-        transform: translateX(100%);
-        width: 40%;
-        transition: transform 0.5s ease-in;
-    }
-    .nav-links li{
-        opacity: 0;
-    }
-    .burger{
-        display: block;
-        cursor: pointer;
-    }
-    h2{
-        padding-top: 30%;
-        font-size: 35px;
-    }
-}
-
-.burger-active{
-    transform: translateX(0%);
-}
-
-@keyframes navlinkFade{
-    from{
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
     }
 }
 
@@ -172,27 +127,141 @@ h2{
 
 
 
+/* About me */
+
 
 .Aboutme{
-    background-color: rebeccapurple;
+    background-color: rgba(65, 105, 225, 0.452);
     height: 100vh;
     margin: 0;
     padding: 0;
     width: 100%;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/* project */
+
 .projects{
-    background-color: red;
-    height: 50vh;
+    background-color: rgba(65, 105, 225, 0.452);
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.warper{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 50px;
+    height: 60vh   ;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+}
+.warper::-webkit-scrollbar{
+    width: 0;
+}
+.item{
+    margin-top: 2vh;
+    min-width: 50%;
+    margin-left: 10px;
+    height: 56vh;
+    line-height: 110px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: rgba(245, 245, 245, 0.664);
+}
+h3{
+    line-height: 0;
+    font-size: 3em;
+}
+
+.txt{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 60px;
+    font-family: cursive;
+}
+
+.item img{
+    padding-top: 3%;
+    height: 70%;
+    border-radius: 8px;
+}
+
+
+/* contact */
+
+.contact{
+    background-color: rgba(65, 105, 225, 0.452);
+    height: 40vh;
     margin: 0;
     padding: 0;
     width: 100%;
 }
 
-.contact{
-    background-color: greenyellow;
-    height: 20vh;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+
+
+hr{
+    background-color: rgba(255, 0, 0, 0.411);
+    border-bottom: 1px solid whitesmoke;
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: navy;
+        transform: translateX(100%);
+        width: 40%;
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    h2{
+        padding-top: 30%;
+        font-size: 35px;
+    }
+    .item{
+        min-width: 100%;
+    }
+}
+
+.burger-active{
+    transform: translateX(0%);
+}
+
+@keyframes navlinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
