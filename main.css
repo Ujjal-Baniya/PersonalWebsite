@@ -81,6 +81,7 @@ h2{
     font-size: 60px;
 }
 
+
 @media screen and (max-width:900px){
     .nav-links{
         width: 50%;
@@ -88,6 +89,9 @@ h2{
     h2{
         padding-top: 25%;
         font-size: 50px;
+    }
+    .item img{
+        width: 85%;
     }
 }
 
@@ -253,6 +257,13 @@ hr{
 
 .burger-active{
     transform: translateX(0%);
+}
+
+@media screen and (max-width:476px){
+    .warper{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 
 @keyframes navlinkFade{
