@@ -209,7 +209,6 @@ h3{
     margin: 0;
     padding: 0;
     color: black;
-    font-size: 60px;
 }
 
 .item img{
@@ -261,7 +260,17 @@ h3{
     border-radius: 50%;
   }
 
-@media screen and (max-width:768px){
+  
+.bdr{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 10em;
+}
+
+  
+  @media screen and (max-width:768px){
     body{
         overflow-x: hidden;
     }
@@ -293,7 +302,10 @@ h3{
         min-width: 100%;
     }
     .txt{
-        font-size: 40px;
+        font-size: 30px;
+    }
+    .bdr{
+        width: 8em;
     }
 
 }
