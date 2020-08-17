@@ -81,3 +81,15 @@ function scrlll(){
 
 right.addEventListener("click", scrll);
 left.addEventListener("click", scrlll);
+
+
+/// cont
+
+var cunt = document.getElementById("cont")
+cunt.addEventListener("click", ()=>{
+    nav.classList.remove("burger-active");
+    navlinks.forEach((link, index) => {
+        link.style.animation = "";
+        })
+    burger.classList.remove('toggle')
+})
