@@ -185,6 +185,7 @@ nav{
 }
 .item{
     font-family: 'Domine', serif;
+    letter-spacing: 0.2em;
     font-size: medium;
     margin-top: 2vh;
     min-width: 50%;
@@ -291,6 +292,10 @@ h3{
     .item{
         min-width: 100%;
     }
+    .txt{
+        font-size: 40px;
+    }
+
 }
 
 .burger-active{
