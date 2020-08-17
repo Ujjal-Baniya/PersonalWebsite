@@ -44,15 +44,40 @@ window.addEventListener("scroll", function(){
 window.addEventListener("load", loading)
 var x = 0
 function loading(){
-    str = "Hello  I am UjjaL baniya"
-    var h = document.querySelector("#hello")
+    str = "Hello I am UjjaL baniya"
+    var h = document.querySelector("#lavda")
+    var naa = document.querySelector("#naam")
     if(x<str.length){
         if(x == 5){
-            h.innerHTML += "<br>"
+            lavda.innerHTML += "<br>";
         }
-        h.innerHTML += str.charAt(x);
-        x++;
-        setTimeout(loading, 200)
+        if(x>10){
+            naam.innerHTML += str.charAt(x);
+            x++;
+        }
+        else{
+            lavda.innerHTML += str.charAt(x); 
+            x++;
+        }
+        setTimeout(loading, 200);
     }
     
 }   
+
+
+var left = document.getElementById("left");
+var right = document.getElementById("right");
+
+function scrll(){
+    var body = document.getElementsByClassName("warper");
+    body[0].scrollLeft += 90;
+
+}
+
+function scrlll(){
+    var body = document.getElementsByClassName("warper");
+    body[0].scrollLeft -= 90;
+}
+
+right.addEventListener("click", scrll);
+left.addEventListener("click", scrlll);

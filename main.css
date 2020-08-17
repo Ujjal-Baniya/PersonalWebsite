@@ -34,7 +34,13 @@ nav{
     min-height: 8vh;
 }
 
+@font-face {
+    font-family: myFirstFont;
+    src: url(chalk.otf);
+  }
+
 #logo{
+    font-family: 'Monoton', cursive;
     color: skyblue;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -71,14 +77,17 @@ nav{
     transition: all 0.3s ease;
 }
 
-h2{
+#hello{
+    font-family: myFirstFont;
     margin-top: 0px;
     text-align: center;
     padding-top: 15%;
-    color: red;
     margin-left: 20%;
     margin-right: 20%;
     font-size: 60px;
+}
+#naam{
+    color: rgba(255, 0, 0, 0.836);
 }
 
 
@@ -175,6 +184,8 @@ h2{
     width: 0;
 }
 .item{
+    font-family: 'Domine', serif;
+    font-size: medium;
     margin-top: 2vh;
     min-width: 50%;
     margin-left: 10px;
@@ -186,16 +197,18 @@ h2{
 }
 h3{
     line-height: 0;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .txt{
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 50px;
     text-align: center;
     margin: 0;
     padding: 0;
     color: black;
     font-size: 60px;
-    font-family: cursive;
 }
 
 .item img{
@@ -215,12 +228,37 @@ h3{
     width: 100%;
 }
 
+/* next and prev buttons */
 
-
-hr{
-    background-color: rgba(255, 0, 0, 0.411);
-    border-bottom: 1px solid whitesmoke;
-}
+.round {
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    padding: 8px 16px;
+  }
+  
+    .round:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .previous {
+      position: absolute;
+      left: 5%;
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .next {
+      position: absolute;
+    right: 5%;
+    background-color: #f1f1f1;
+    color:black;
+  }
+  
+  .round {
+    border-radius: 50%;
+  }
 
 @media screen and (max-width:768px){
     body{
