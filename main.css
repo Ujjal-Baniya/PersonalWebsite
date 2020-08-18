@@ -184,6 +184,7 @@ nav{
     width: 0;
 }
 .item{
+    cursor: pointer;
     font-family: 'Domine', serif;
     letter-spacing: 0.2em;
     font-size: medium;
@@ -194,14 +195,28 @@ nav{
     line-height: 110px;
     text-align: center;
     border-radius: 8px;
-    background-color: rgba(245, 245, 245, 0.664);
+    background-color: rgba(245, 245, 245, 0.863);
 }
+.item:hover{
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+                -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05) ;
+    border: 1px soid rgba(0, 0, 0, 0.01);
+
+
+    
+}
+
+
 h3{
     line-height: 0;
     font-size: 2em;
 }
 
 .txt{
+    cursor: none;
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 0.1em;
     font-size: 50px;
@@ -239,7 +254,7 @@ h3{
   }
   
     .round:hover {
-    background-color: #ddd;
+    background-color: rgba(63, 255, 5, 0.808);
     color: black;
   }
   
@@ -348,6 +363,9 @@ h3{
     }
     .BTNS{
         padding-top: 15%;
+    }
+    .social{
+        margin: 0 10px;
     }
 
 
