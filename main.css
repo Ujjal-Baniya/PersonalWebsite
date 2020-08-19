@@ -158,22 +158,24 @@ p{
  
 .idea{
     display: flex;
-    justify-content: center;
+    margin-top: 50px;
+    /* justify-content: center; */
 }
 #dadapic{
-    width: 50%;
+    width: 40%;
     height: 100%;
     padding-left: 5%;
 }
 
 #dadapic img{
-    width: 50%;
+    width: 60%;
     height: 80%;
 }
 
 #dadatxt{
-    width: 50%;
+    width: 60%;
     height: 100%;
+    padding-right: 10%;
 }
 
 
