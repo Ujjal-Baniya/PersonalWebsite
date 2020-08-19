@@ -151,13 +151,30 @@ nav{
     width: 100%;
 }
 
+p{
+    padding-left: 1em;
+    font-family: cursive;
+}
+ 
+.idea{
+    display: flex;
+    justify-content: center;
+}
+#dadapic{
+    width: 50%;
+    height: 100%;
+    padding-left: 5%;
+}
 
+#dadapic img{
+    width: 50%;
+    height: 80%;
+}
 
-
-
-
-
-
+#dadatxt{
+    width: 50%;
+    height: 100%;
+}
 
 
 
