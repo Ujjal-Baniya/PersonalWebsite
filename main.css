@@ -164,22 +164,38 @@ p{
 #dadapic{
     width: 40%;
     height: 100%;
-    padding-left: 5%;
+    padding-top: 3%;
+    padding-left: 10%;
 }
 
 #dadapic img{
-    width: 60%;
+    width: 86%;
     height: 80%;
 }
 
 #dadatxt{
+    font-family: 'Poppins', sans-serif;
     width: 60%;
     height: 100%;
     padding-right: 10%;
 }
 
+.int{
+    font-family: 'Allan', cursive;
+    font-size: 2.2em;
+    letter-spacing: 0.1em;
+    font-weight: lighter;
+}
 
+p{
+    font-size: 1.5em;
+    font-family: 'poppins', cursive;
+    font-weight: bold;
 
+}
+.intro{
+    font-size: 1.5em;
+}
 
 /* project */
 
