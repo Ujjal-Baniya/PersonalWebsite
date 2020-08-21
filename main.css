@@ -102,6 +102,9 @@ nav{
     .item img{
         width: 85%;
     }
+    .intro{
+        font-size: 1.2em;
+    }
 }
 
 
@@ -197,6 +200,24 @@ p{
     font-size: 1.5em;
 }
 
+
+@media screen and (max-width:990px){
+    .int{
+        font-size: 2em;
+    }
+    p{
+        font-size: 1.3em;
+    }
+    #dadapic{
+        width: 60%;
+        height: 100%;
+        padding-top: 15%;
+        padding-left: 5%;
+    }
+    .intro {
+        font-size: 1.1em;
+    }
+}
 /* project */
 
 .projects{
@@ -402,7 +423,43 @@ h3{
     .social{
         margin: 0 10px;
     }
+    .idea{
+        margin-top: 10px;
+        height: 100%;
+        width: 100%;
+        flex-direction: column ;
+        padding-bottom: 30px;
+    }
+    
+    #dadapic{
+        width: 100%;
+        height: 100%;
+        padding-top: 3%;
+    }
+    #dadapic img {
+        width: 86%;
+        height: 80%;
+    }
 
+    #dadatxt {
+        width: 100%;
+        height: 100%;
+        padding-right: 5%;
+        padding-left: 10%;
+        margin-top: 20px;
+    }
+    .intro {
+        font-size: 1.1em;
+    }
+    .Aboutme{
+        height: auto;
+    }
+    .int{
+        font-size: 1.5em;
+    }
+    p{
+        font-size: 1.2em;
+    }
 
 }
 
